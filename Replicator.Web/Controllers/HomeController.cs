@@ -53,11 +53,11 @@ namespace Replicator.Web.Controllers
             ViewData["Email"] = Email;
             ViewData["Password"] = Password;
             ViewData["RePassword"] = RePassword;
-            ViewData["FirstNameColor"] = validFirstName ? "#000000" : "#FF2020";
-            ViewData["LastNameColor"] = validLastName ? "#000000" : "#FF2020";
-            ViewData["EmailColor"] = validEmail ? "#000000" : "#FF2020";
-            ViewData["PasswordColor"] = validPassword ? "#000000" : "#FF2020";
-            ViewData["RePasswordColor"] = (!(RePassword is null) && RePassword == Password) ? "#000000" : "#FF2020";
+            ViewData["FirstNameColor"] = validFirstName ? "#20FF20" : "#FF2020";
+            ViewData["LastNameColor"] = validLastName ? "#20FF20" : "#FF2020";
+            ViewData["EmailColor"] = validEmail ? "#20FF20" : "#FF2020";
+            ViewData["PasswordColor"] = validPassword ? "#20FF20" : "#FF2020";
+            ViewData["RePasswordColor"] = (!(RePassword is null) && RePassword == Password) ? "#20FF20" : "#FF2020";
             return View();
         }
 
