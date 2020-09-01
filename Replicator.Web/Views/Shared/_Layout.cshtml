@@ -29,10 +29,11 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            <canvas style="display: none" width="888" height="576" id="gol" onload="startGame()"></canvas>
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted" style="background-color: white">
         <div class="container">
             &copy; 2020 - Drink Replicator Inc.
         </div>

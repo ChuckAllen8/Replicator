@@ -59,8 +59,8 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
 .footer {
   position: absolute;
@@ -81,6 +81,15 @@ body {
 
 .half-page {
     width: 50%;
+    background-color: white;
+}
+
+.half-page-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    background-color: white;
 }
 
 .float-container input {
