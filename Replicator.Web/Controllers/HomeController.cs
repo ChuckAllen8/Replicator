@@ -69,22 +69,6 @@ namespace Replicator.Web.Controllers
             return View();
         }
 
-        [HttpGet]
-        public IActionResult ReplicatorTime()
-        {
-            ViewData["TimeStamp"] = DateTime.Now;
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult ReplicatorTime(string update, string FirstName, string LastName, bool detroit)
-        {
-            ViewBag.Message = $"Welcome {FirstName} {LastName} {(detroit ? "who has been to detroit" : "who has not been to detroit")}";
-            ViewData["FirstName"] = FirstName;
-            ViewData["TimeStamp"] = DateTime.Now;
-            return View();
-        }
-
         public IActionResult Index()
         {
             return View();
