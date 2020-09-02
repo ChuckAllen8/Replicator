@@ -89,7 +89,7 @@ function countNeighbors(x, y) {
 }
 
 function updateHTML() {
-	document.body.style.background = "url(" + canvas.toDataURL() + ") no-repeat fixed center center /100%";
+	document.body.style.background = "url(" + canvas.toDataURL() + ") no-repeat fixed center center /cover";
 	//display.globalAlpha = 0.5; //opacity, causes shadow effect
 	for (var row = 0; row < rowsOfCells; row++) {
 		for (var col = 0; col < cellsPerRow; col++) {

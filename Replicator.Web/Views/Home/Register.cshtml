@@ -3,26 +3,28 @@
     ViewData["Title"] = "Register";
 }
 <div class="inline-display">
-<div class="float-container half-page">
-    <h1 style="text-align: center">Register</h1><hr />
-    <form action="/Home/Register" method="post">
-        <label for="FirstName">First Name</label>
-        <input type="text" style="border-color: @ViewData["FirstNameColor"]" id="FirstName" name="FirstName" value="@ViewData["FirstName"]" /><br /><br />
+    <div class="float-container half-page">
+        <h1 class="text-center">Register</h1><hr />
+        <form action="/Home/Register" method="post">
+            <label for="FirstName">First Name</label>
+            <input type="text" style="border-color: @ViewData["FirstNameColor"]" id="FirstName" name="FirstName" value="@ViewData["FirstName"]" /><br /><br />
 
-        <label for="LastName">Last Name</label>
-        <input type="text" id="LastName" name="LastName" value="@ViewData["LastName"]" style="border-color: @ViewData["LastNameColor"]" /><br /><br />
+            <label for="LastName">Last Name</label>
+            <input type="text" id="LastName" name="LastName" value="@ViewData["LastName"]" style="border-color: @ViewData["LastNameColor"]" /><br /><br />
 
-        <label for="Email">Email</label>
-        <input type="text" id="Email" name="Email" value="@ViewData["Email"]" style="border-color: @ViewData["EmailColor"]" /><br /><br />
+            <label for="Email">Email</label>
+            <input type="text" id="Email" name="Email" value="@ViewData["Email"]" style="border-color: @ViewData["EmailColor"]" /><br /><br />
 
-        <label for="Password">Password</label>
-        <input type="password" id="Password" name="Password" value="@ViewData["Password"]" style="border-color: @ViewData["PasswordColor"]" /><br /><br />
+            <label for="Password">Password</label>
+            <input type="password" id="Password" name="Password" value="@ViewData["Password"]" style="border-color: @ViewData["PasswordColor"]" /><br /><br />
 
-        <label for="RePassword">Re-Type Password</label>
-        <input type="password" id="RePassword" name="RePassword" value="@ViewData["RePassword"]" style="border-color: @ViewData["RePasswordColor"]" /><br /><br />
+            <label for="RePassword">Re-Type Password</label>
+            <input type="password" id="RePassword" name="RePassword" value="@ViewData["RePassword"]" style="border-color: @ViewData["RePasswordColor"]" /><br /><br />
 
-        <input id="submit" class="btn btn-dark" type="submit" value="Complete Registration" />
-    </form>
-</div>
-<div class="float-container half-page"><img src="~/lib/images/Nutrimaticfilm.jpg" style="height: 100%; width: 100%; object-fit: contain"/></div>
+            <input id="submit" class="btn btn-dark" type="submit" value="Complete Registration" />
+        </form>
+    </div>
+    <div class="float-container half-page">
+        <img src="~/lib/images/Nutrimaticfilm.jpg" style="height: 100%; width: 100%; object-fit: contain" />
+    </div>
 </div>
